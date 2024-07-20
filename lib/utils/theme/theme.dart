@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../constants/color.dart';
 import 'widget_theme/list_tile_theme.dart';
-import 'widget_theme/text_theme.dart';
+import 'text_theme.dart';
 
 class TAppTheme {
   TAppTheme._();

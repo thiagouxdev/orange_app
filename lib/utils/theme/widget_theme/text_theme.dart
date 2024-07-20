@@ -1,90 +1,100 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
-class TTextTheme {
-  //fontFamily
-  static const String tFontFamily = 'Inter';
+class TText extends StatelessWidget {
+  final String text;
+  final TextStyle? style;
 
-  //weight
-  static const FontWeight weightRegular = FontWeight.w400;
-  static const FontWeight weightMedium = FontWeight.w500;
-  static const FontWeight weightSemiBold = FontWeight.w600;
+  const TText(this.text, {super.key, this.style});
 
-  static final TextTheme textTheme = TextTheme(
-    //headline
-    headlineLarge: GoogleFonts.getFont(
-      tFontFamily,
-      fontSize: 32,
-      fontWeight: weightSemiBold,
-    ),
-    headlineMedium: GoogleFonts.getFont(
-      tFontFamily,
-      fontSize: 28,
-      fontWeight: weightSemiBold,
-    ),
-    headlineSmall: GoogleFonts.getFont(
-      tFontFamily,
-      fontSize: 24,
-      fontWeight: weightSemiBold,
-    ),
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      text,
+      style: style,
+    );
+  }
 
-    //title
-    titleLarge: GoogleFonts.getFont(
-      tFontFamily,
-      fontSize: 22,
-      fontWeight: weightSemiBold,
-    ),
-    titleMedium: GoogleFonts.getFont(
-      tFontFamily,
-      fontSize: 16,
-      fontWeight: weightSemiBold,
-      letterSpacing: 0.15,
-    ),
-    titleSmall: GoogleFonts.getFont(
-      tFontFamily,
-      fontSize: 14,
-      fontWeight: weightSemiBold,
-      letterSpacing: 0.1,
-    ),
+  static Widget headlineLarge(String text) => Builder(
+        builder: (context) => TText(
+          text,
+          style: Theme.of(context).textTheme.headlineLarge,
+        ),
+      );
 
-    //label
-    labelLarge: GoogleFonts.getFont(
-      tFontFamily,
-      fontSize: 14,
-      fontWeight: weightMedium,
-      letterSpacing: 0.1,
-    ),
-    labelMedium: GoogleFonts.getFont(
-      tFontFamily,
-      fontSize: 12,
-      fontWeight: weightMedium,
-      letterSpacing: 0.5,
-    ),
-    labelSmall: GoogleFonts.getFont(
-      tFontFamily,
-      fontSize: 11,
-      fontWeight: weightMedium,
-      letterSpacing: 0.5,
-    ),
+  static Widget headlineMedium(String text) => Builder(
+        builder: (context) => TText(
+          text,
+          style: Theme.of(context).textTheme.headlineMedium,
+        ),
+      );
 
-    //body
-    bodyLarge: GoogleFonts.getFont(
-      tFontFamily,
-      fontSize: 16,
-      fontWeight: weightRegular,
-      letterSpacing: 0.5,
-    ),
-    bodyMedium: GoogleFonts.getFont(
-      tFontFamily,
-      fontSize: 14,
-      fontWeight: weightRegular,
-      letterSpacing: 0.25,
-    ),
-    bodySmall: GoogleFonts.getFont(
-      tFontFamily,
-      fontSize: 12,
-      fontWeight: weightRegular,
-      letterSpacing: 0.4,
-    ),
-  );
+  static Widget headlineSmall(String text) => Builder(
+        builder: (context) => TText(
+          text,
+          style: Theme.of(context).textTheme.headlineSmall,
+        ),
+      );
+
+  static Widget titleLarge(String text) => Builder(
+        builder: (context) => TText(
+          text,
+          style: Theme.of(context).textTheme.titleLarge,
+        ),
+      );
+
+  static Widget titleMedium(String text) => Builder(
+        builder: (context) => TText(
+          text,
+          style: Theme.of(context).textTheme.titleMedium,
+        ),
+      );
+
+  static Widget titleSmall(String text) => Builder(
+        builder: (context) => TText(
+          text,
+          style: Theme.of(context).textTheme.titleSmall,
+        ),
+      );
+
+  static Widget labelLarge(String text) => Builder(
+        builder: (context) => TText(
+          text,
+          style: Theme.of(context).textTheme.labelLarge,
+        ),
+      );
+
+  static Widget labelMedium(String text) => Builder(
+        builder: (context) => TText(
+          text,
+          style: Theme.of(context).textTheme.labelMedium,
+        ),
+      );
+
+  static Widget labelSmall(String text) => Builder(
+        builder: (context) => TText(
+          text,
+          style: Theme.of(context).textTheme.labelSmall,
+        ),
+      );
+
+  static Widget bodyLarge(String text) => Builder(
+        builder: (context) => TText(
+          text,
+          style: Theme.of(context).textTheme.bodyLarge,
+        ),
+      );
+
+  static Widget bodyMedium(String text) => Builder(
+        builder: (context) => TText(
+          text,
+          style: Theme.of(context).textTheme.bodyMedium,
+        ),
+      );
+
+  static Widget bodySmall(String text) => Builder(
+        builder: (context) => TText(
+          text,
+          style: Theme.of(context).textTheme.bodySmall,
+        ),
+      );
 }

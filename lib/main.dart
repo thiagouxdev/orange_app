@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:orange_app/utils/theme/theme.dart';
+import 'package:orange_app/utils/theme/widget_theme/text_theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -53,6 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
             const Text(
               'You have pushed the button this many times:',
             ),
+            TText.headlineMedium("$_counter"),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
