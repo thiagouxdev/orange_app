@@ -1,0 +1,35 @@
+flutter_native_splash:
+  # Cor de fundo da tela de splash
+  color: "#FFFFFF"
+
+  # Imagem de splash para o modo claro
+  image: assets/logos/t_splash_logo_light.png
+
+  # Cor de fundo para o modo escuro
+  color_dark: "#050505"
+
+  # Imagem de splash para o modo escuro
+  image_dark: assets/logos/t_splash_logo_dark.png
+
+  android_12:
+    # Imagem para Android 12 no modo claro
+    image: assets/logos/t_splash_logo_light.png
+    # Cor de fundo para Android 12 no modo claro
+    color: "#FFFFFF"
+    # Imagem para Android 12 no modo escuro
+    image_dark: assets/logos/t_splash_logo_dark.png
+    # Cor de fundo para Android 12 no modo escuro
+    color_dark: "#050505"
+
+  # Habilitando tela de splash para Android e iOS
+  android: true
+  ios: true
+  web: false
+
+  # Parâmetros adicionais (opcional)
+  android_gravity: center
+  ios_content_mode: center
+  web_image_mode: center
+
+  # Parâmetro fullscreen para ocultar a barra de notificação (opcional)
+  fullscreen: true
