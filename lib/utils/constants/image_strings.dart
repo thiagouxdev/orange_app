@@ -1,4 +1,4 @@
-import 'package:orange_app/resources/t_resources.dart';
+import 'package:orange_app/utils/resources/t_resources.dart';
 
 class TImages {
   // Walkthrough Images
