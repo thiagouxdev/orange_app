@@ -28,3 +28,5 @@ flutter:
   #---------- LOCAL ASSETS ----------#
   assets:
   - assets/walkthrough/
+  - assets/walkthrough/dark/
+  - assets/walkthrough/light/

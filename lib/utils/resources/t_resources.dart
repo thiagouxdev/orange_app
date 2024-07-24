@@ -5,8 +5,9 @@ class TResources {
       BuildContext context, String category, String resourceName) {
     final brightness = MediaQuery.of(context).platformBrightness;
     final isDarkMode = brightness == Brightness.dark;
-    final path = "assets/$category/";
+    final themeFolder = isDarkMode ? 'dark' : 'light';
+    final path = "assets/$category/$themeFolder/";
 
-    return "$path$resourceName-${isDarkMode ? 'dark' : 'light'}.png";
+    return "$path$resourceName.png";
   }
 }
