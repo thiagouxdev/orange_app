@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../resources/t_resources.dart';
+import '../../../utils/constants/image_strings.dart';
 
 class WalkthroughPage extends StatefulWidget {
   const WalkthroughPage({super.key});
@@ -18,8 +18,7 @@ class _WalkthroughPageState extends State<WalkthroughPage> {
         body: Center(
           child: Column(
             children: <Widget>[
-              Image.asset(
-                  TResources.getResourcePath(context, "walkthrough", "img-1")),
+              Image.asset(TImages.getWalkthroughImg1(context)),
             ],
           ),
         ));
