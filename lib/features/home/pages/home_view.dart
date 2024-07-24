@@ -6,10 +6,23 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Home'),
+      body: CustomScrollView(
+        slivers: [
+          const SliverAppBar.large(
+            title: Text("Home"),
+          ),
+          SliverList(
+            delegate: SliverChildBuilderDelegate(
+              (BuildContext context, int index) {
+                return ListTile(
+                  title: Text('Item #${index + 1}'),
+                );
+              },
+              childCount: 20, // Número de itens na lista
+            ),
+          ),
+        ],
       ),
-      body: const Placeholder(),
     );
   }
 }
