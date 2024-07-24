@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../resources/t_resources.dart';
 
 class WalkthroughPage extends StatefulWidget {
   const WalkthroughPage({super.key});
@@ -11,10 +12,16 @@ class _WalkthroughPageState extends State<WalkthroughPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Walkthrough'),
-      ),
-      body: const Placeholder(),
-    );
+        appBar: AppBar(
+          title: const Text('Walkthrough'),
+        ),
+        body: Center(
+          child: Column(
+            children: <Widget>[
+              Image.asset(
+                  TResources.getResourcePath(context, "walkthrough", "img-1")),
+            ],
+          ),
+        ));
   }
 }
