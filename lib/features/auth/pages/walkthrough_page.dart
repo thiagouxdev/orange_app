@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:orange_app/utils/resources/t_resources.dart';
 import 'package:orange_app/utils/theme/widgets/text_theme.dart';
 
