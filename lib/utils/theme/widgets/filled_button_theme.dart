@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:orange_app/utils/constants/sizes.dart';
 
 class TFilledButtonTheme {
   static FilledButtonThemeData get theme {
@@ -9,7 +10,7 @@ class TFilledButtonTheme {
         ),
         shape: WidgetStatePropertyAll(
           RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12),
+            borderRadius: BorderRadius.circular(TSizes.borderRadiusMedium),
           ),
         ),
       ),

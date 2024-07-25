@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:orange_app/utils/resources/t_resources.dart';
+import 'package:orange_app/features/auth/controllers/walkthrough_controller.dart';
 import 'package:orange_app/utils/theme/widgets/text_theme.dart';
 
-import '../../../utils/constants/text_strings.dart';
+import '../../../utils/constants/sizes.dart';
 
 class WalkthroughPage extends StatefulWidget {
   const WalkthroughPage({super.key});
@@ -12,8 +12,18 @@ class WalkthroughPage extends StatefulWidget {
 }
 
 class _WalkthroughPageState extends State<WalkthroughPage> {
+  late final WalkthroughController _controller;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = WalkthroughController(); // Inicialize o controller
+  }
+
   @override
   Widget build(BuildContext context) {
+    final items =
+        _controller.getItems(context); // Obtenha os itens do controller
     return Scaffold(
       bottomSheet: Column(
         mainAxisSize: MainAxisSize.min,
@@ -41,24 +51,25 @@ class _WalkthroughPageState extends State<WalkthroughPage> {
         ],
       ),
       body: PageView.builder(
-        itemCount: 3,
+        itemCount: items.length,
         itemBuilder: (context, index) {
+          final item = items[index];
           return Column(
             children: [
               Image.asset(
-                TResources.getResourcePath(context, "walkthrough", "img-1"),
+                item.image,
               ),
               Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 16, vertical: 24),
+                padding: const EdgeInsets.symmetric(
+                    horizontal: TSizes.large, vertical: TSizes.extraLarge),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    TText.headlineMedium(TTexts.walkthroughHeading1),
+                    TText.headlineMedium(item.heading),
                     const SizedBox(
-                      height: 12,
+                      height: TSizes.medium,
                     ),
-                    TText.bodyMedium(TTexts.walkthroughSubHeading1),
+                    TText.bodyMedium(item.subHeading),
                   ],
                 ),
               )

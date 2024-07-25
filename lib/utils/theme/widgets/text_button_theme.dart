@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../constants/sizes.dart';
+
 class TTextButtonTheme {
   static TextButtonThemeData get theme {
     return TextButtonThemeData(
@@ -9,7 +11,7 @@ class TTextButtonTheme {
         ),
         shape: WidgetStatePropertyAll(
           RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12),
+            borderRadius: BorderRadius.circular(TSizes.borderRadiusMedium),
           ),
         ),
       ),
