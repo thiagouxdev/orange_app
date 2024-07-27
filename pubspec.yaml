@@ -30,3 +30,6 @@ flutter:
   - assets/walkthrough/
   - assets/walkthrough/dark/
   - assets/walkthrough/light/
+  - assets/logos/
+  - assets/logos/dark/
+  - assets/logos/light/

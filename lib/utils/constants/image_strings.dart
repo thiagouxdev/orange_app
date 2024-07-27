@@ -14,4 +14,8 @@ class TImages {
   static String getWalkthroughImg3(context) {
     return TResources.getResourcePath(context, "walkthrough", "img-3");
   }
+
+  static String getLogo(context) {
+    return TResources.getResourcePath(context, "logos", "logo");
+  }
 }
