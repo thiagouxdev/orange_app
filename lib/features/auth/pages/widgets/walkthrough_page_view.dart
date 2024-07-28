@@ -24,15 +24,20 @@ class WalkthroughPageView extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.symmetric(
-                  horizontal: TSizes.large, vertical: TSizes.extraLarge),
+                  horizontal: TSizes.extraLarge, vertical: TSizes.extraLarge),
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  TText.headlineMedium(item.heading),
+                  TText.headlineMedium(
+                    item.heading,
+                    textAlign: TextAlign.center,
+                  ),
                   const SizedBox(
                     height: TSizes.medium,
                   ),
-                  TText.bodyMedium(item.subHeading),
+                  TText.bodyMedium(
+                    item.subHeading,
+                    textAlign: TextAlign.center,
+                  ),
                 ],
               ),
             )
