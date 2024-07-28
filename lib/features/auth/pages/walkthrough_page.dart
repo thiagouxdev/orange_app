@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:orange_app/features/auth/controllers/walkthrough_controller.dart';
-import '../../../utils/device/device_utility.dart';
 import 'widgets/walkthrough_app_bar.dart';
 import 'widgets/walkthrough_bottom.dart';
 import 'widgets/walkthrough_page_view.dart';
@@ -25,18 +24,17 @@ class _WalkthroughPageState extends State<WalkthroughPage> {
   Widget build(BuildContext context) {
     final items = _controller.getItems(context);
     return Scaffold(
-      body: Stack(
-        children: [
-          WalkthroughPageView(
-            items: items,
-          ),
-          Positioned(
-            top: TDeviceUtils.getStatusBarHeight(),
-            left: 0,
-            right: 0,
-            child: const WalkthroughAppBar(),
-          ),
-        ],
+      body: SafeArea(
+        child: Column(
+          children: [
+            const WalkthroughAppBar(),
+            Expanded(
+              child: WalkthroughPageView(
+                items: items,
+              ),
+            ),
+          ],
+        ),
       ),
       bottomSheet: const WalkthroughBottom(),
     );

@@ -7,7 +7,7 @@ class TTexts {
   static const String walkthroughSubHeading1 =
       "Lorem ipsum 1 dolor sit amet consectetur. Suspendisse sed mattis et sem.";
   static const String walkthroughSubHeading2 =
-      "Lorem ipsum 2 dolor sit amet consectetur. Suspendisse sed mattis et sem.";
+      "Lorem ipsum 2 lorem dolor sit amet consectetur. Suspendisse sed mattis et sem.";
   static const String walkthroughSubHeading3 =
-      "Lorem ipsum 3 dolor sit amet consectetur. Suspendisse sed mattis et sem.";
+      "Lorem ipsum 3 dolor lorem sit amet consectetur. Suspendisse sed mattis et sem.";
 }
