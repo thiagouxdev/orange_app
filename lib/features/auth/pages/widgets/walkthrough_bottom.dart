@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:orange_app/utils/constants/sizes.dart';
 
 import '../../../../utils/theme/widgets/filled_button_larger_theme.dart';
 
@@ -17,17 +18,16 @@ class WalkthroughBottom extends StatelessWidget {
           height: 0,
         ),
         Padding(
-          padding: const EdgeInsets.all(16),
+          padding: const EdgeInsets.only(
+              top: TSizes.medium,
+              right: TSizes.medium,
+              bottom: TSizes.extraLarge,
+              left: TSizes.medium),
           child: Column(
             children: [
               TFilledButtonLargerTheme(
                 label: "Continuar",
                 onPressed: () {},
-              ),
-              const SizedBox(height: 8.0),
-              TextButton(
-                onPressed: () {},
-                child: const Text("Test"),
               ),
             ],
           ),
