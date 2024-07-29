@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:orange_app/features/auth/controllers/walkthrough_controller.dart';
-import 'package:orange_app/features/auth/models/walkthrough_models.dart';
 import 'package:orange_app/utils/constants/sizes.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'widgets/walkthrough_app_bar.dart';
 import 'widgets/walkthrough_bottom.dart';
 import 'widgets/walkthrough_page_view.dart';
