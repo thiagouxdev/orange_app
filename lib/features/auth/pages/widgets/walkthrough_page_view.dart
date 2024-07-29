@@ -7,17 +7,21 @@ class WalkthroughPageView extends StatelessWidget {
   const WalkthroughPageView({
     super.key,
     required this.items,
+    required this.pageController,
   });
 
   final List<WalkthroughModels> items;
+  final PageController pageController;
 
   @override
   Widget build(BuildContext context) {
     return PageView.builder(
+      controller: pageController,
       itemCount: items.length,
       itemBuilder: (context, index) {
         final item = items[index];
         return Column(
+          mainAxisSize: MainAxisSize.min,
           children: [
             Image.asset(
               item.image,
