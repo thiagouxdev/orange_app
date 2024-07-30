@@ -1,11 +1,11 @@
 import 'package:get/get.dart';
-import 'package:orange_app/features/auth/pages/walkthrough_page.dart';
-import '../features/home/pages/home_view.dart';
+import 'package:orange_app/features/auth/walkthrough/pages/walkthrough_page.dart';
+import 'package:orange_app/features/auth/welcome/welcome_page.dart';
 
-class AppPage {
+class AppPages {
   static final page = [
-    GetPage(name: "/", page: () => const WalkthroughPage()),
-    GetPage(name: "/", page: () => const HomePage()),
+    GetPage(name: "/", page: () => const WelcomePage()),
     GetPage(name: "/auth", page: () => const WalkthroughPage()),
+    GetPage(name: "/welcome", page: () => const WelcomePage()),
   ];
 }

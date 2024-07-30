@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: TAppTheme.lightTheme(context),
       darkTheme: TAppTheme.darkTheme(context),
-      getPages: AppPage.page,
+      getPages: AppPages.page,
     );
   }
 }

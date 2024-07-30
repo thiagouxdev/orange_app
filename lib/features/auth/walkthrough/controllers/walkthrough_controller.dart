@@ -1,5 +1,5 @@
-import '../../../utils/constants/image_strings.dart';
-import '../../../utils/constants/text_strings.dart';
+import '../../../../utils/constants/image_strings.dart';
+import '../../../../utils/constants/text_strings.dart';
 import '../models/walkthrough_models.dart';
 
 class WalkthroughController {

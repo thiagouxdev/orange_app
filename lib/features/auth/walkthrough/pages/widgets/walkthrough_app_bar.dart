@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:orange_app/utils/constants/image_strings.dart';
 import 'package:orange_app/utils/constants/sizes.dart';
-import '../../../../utils/device/device_utility.dart';
+import '../../../../../utils/device/device_utility.dart';
 
 class WalkthroughAppBar extends StatelessWidget {
   const WalkthroughAppBar({

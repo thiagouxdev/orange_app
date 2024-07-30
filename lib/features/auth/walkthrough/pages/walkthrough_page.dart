@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:orange_app/features/auth/controllers/walkthrough_controller.dart';
+import 'package:get/get.dart';
+import 'package:orange_app/features/auth/walkthrough/controllers/walkthrough_controller.dart';
+import 'package:orange_app/common/widgets/actions_bottom.dart';
+import 'package:orange_app/routes/app_routes.dart';
 import 'package:orange_app/utils/constants/sizes.dart';
 import 'widgets/walkthrough_app_bar.dart';
-import 'widgets/walkthrough_bottom.dart';
 import 'widgets/walkthrough_page_view.dart';
 import 'widgets/walkthrough_smooth_page_indicator.dart';
 
@@ -50,7 +52,11 @@ class _WalkthroughPageState extends State<WalkthroughPage> {
               child: WalkthroughSmoothPageIndicator(
                   pageController: _pageController, items: items),
             ),
-            const WalkthroughBottom(),
+            ActionsBottom(
+              onPressed: () {
+                Get.toNamed(AppRoutes.welcomePage);
+              },
+            ),
           ],
         ),
       ),

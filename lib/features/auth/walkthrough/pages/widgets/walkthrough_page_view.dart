@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:orange_app/features/auth/models/walkthrough_models.dart';
+import 'package:orange_app/features/auth/walkthrough/models/walkthrough_models.dart';
 import 'package:orange_app/utils/constants/sizes.dart';
 import 'package:orange_app/utils/theme/widgets/text_theme.dart';
 

@@ -1,11 +1,18 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
+
 import 'package:orange_app/utils/constants/sizes.dart';
 
-import '../../../../utils/theme/widgets/filled_button_larger_theme.dart';
+import '../../utils/theme/widgets/filled_button_larger_theme.dart';
 
-class WalkthroughBottom extends StatelessWidget {
-  const WalkthroughBottom({
+class ActionsBottom extends StatelessWidget {
+  final String? label;
+  final VoidCallback onPressed;
+
+  const ActionsBottom({
     super.key,
+    this.label,
+    required this.onPressed,
   });
 
   @override
@@ -26,7 +33,7 @@ class WalkthroughBottom extends StatelessWidget {
           child: Column(
             children: [
               TFilledButtonLargerTheme(
-                label: "Continuar",
+                label: label ?? "Continuar",
                 onPressed: () {},
               ),
             ],
