@@ -1,8 +1,5 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
-
 import 'package:orange_app/utils/constants/sizes.dart';
-
 import '../../utils/theme/widgets/filled_button_larger_theme.dart';
 
 class ActionsBottom extends StatelessWidget {
@@ -34,7 +31,7 @@ class ActionsBottom extends StatelessWidget {
             children: [
               TFilledButtonLargerTheme(
                 label: label ?? "Continuar",
-                onPressed: () {},
+                onPressed: onPressed,
               ),
             ],
           ),
