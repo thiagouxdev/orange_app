@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:orange_app/utils/constants/image_strings.dart';
 import 'package:orange_app/utils/constants/sizes.dart';
-import '../../../../../utils/device/device_utility.dart';
 
 class WalkthroughAppBar extends StatelessWidget {
   const WalkthroughAppBar({
@@ -11,7 +10,7 @@ class WalkthroughAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: TDeviceUtils.getAppBarHeight() + TSizes.extraLarge,
+      height: TSizes.superExtraLarge * 2,
       child: Row(
         children: [
           Padding(

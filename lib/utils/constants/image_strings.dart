@@ -1,8 +1,7 @@
 import 'package:orange_app/utils/resources/t_resources.dart';
 
 class TImages {
-  // Walkthrough Images
-
+  // Walkthrough
   static String getWalkthroughImg1(context) {
     return TResources.getResourcePath(context, "walkthrough", "img-1");
   }
@@ -15,6 +14,12 @@ class TImages {
     return TResources.getResourcePath(context, "walkthrough", "img-3");
   }
 
+  // Welcome
+  static String getWelcome(context) {
+    return TResources.getResourcePath(context, "welcome", "img-1");
+  }
+
+  // Logo
   static String getLogo(context) {
     return TResources.getResourcePath(context, "logos", "logo");
   }
