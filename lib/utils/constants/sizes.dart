@@ -22,4 +22,7 @@ class TSizes {
   // Margin
   static const double marginSmall = large;
   static const double marginMedium = extraLarge;
+
+  // Widgets
+  static const double appBarHeight = 56.0;
 }
