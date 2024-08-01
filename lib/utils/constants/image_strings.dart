@@ -23,4 +23,8 @@ class TImages {
   static String getLogo(context) {
     return TResources.getResourcePath(context, "logos", "logo");
   }
+
+  static String getLogoMark(context) {
+    return TResources.getResourcePath(context, "logos", "logomark");
+  }
 }

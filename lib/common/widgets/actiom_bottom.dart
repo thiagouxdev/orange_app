@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:orange_app/utils/constants/sizes.dart';
+import '../../utils/constants/text_strings.dart';
 import '../../utils/theme/widgets/filled_button_larger_theme.dart';
 
 class ActiomBottom extends StatelessWidget {
@@ -30,7 +31,7 @@ class ActiomBottom extends StatelessWidget {
           child: Column(
             children: [
               TFilledButtonLargerTheme(
-                label: label ?? "Continuar",
+                label: label ?? TTexts.continueText,
                 onPressed: onPressed,
               ),
             ],

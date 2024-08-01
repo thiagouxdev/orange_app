@@ -1,13 +1,26 @@
 class TTexts {
-  // Walkthrough Texts
-  static const String walkthroughHeading1 = "Heading 1";
-  static const String walkthroughHeading2 = "Heading 2";
-  static const String walkthroughHeading3 = "Heading 3";
+  // Walkthrough
+  static const String walkthroughHeading1 = "Discover Our Features";
+  static const String walkthroughHeading2 = "Easy and Secure";
+  static const String walkthroughHeading3 = "Join Our Community";
 
   static const String walkthroughSubHeading1 =
-      "Lorem ipsum 1 dolor sit amet consectetur. Suspendisse sed mattis et sem.";
+      "Explore the unique features that make our app stand out. Get the most out of your experience with intuitive design and functionality.";
   static const String walkthroughSubHeading2 =
-      "Lorem ipsum 2 lorem dolor sit amet consectetur. Suspendisse sed mattis et sem.";
+      "Your security and privacy are our top priority. Navigate through our platform with ease, knowing your data is safe and secure.";
   static const String walkthroughSubHeading3 =
-      "Lorem ipsum 3 dolor lorem sit amet consectetur. Suspendisse sed mattis et sem.";
+      "Become a part of our vibrant community. Connect with like-minded individuals and share your experiences.";
+
+  // Welcome
+  static const String welcomeHeading = "Welcome to Orange";
+
+  static const String readOur = "Read our";
+  static const String privacyPolicy = "Privacy Policy";
+  static const String tapOn = "Tap on";
+  static const String agreeAndContinue = "Agree and continue";
+  static const String toAcceptThe = "to accept the";
+  static const String termsOfService = "Terms of Service";
+
+  // Common
+  static const String continueText = "Continue";
 }

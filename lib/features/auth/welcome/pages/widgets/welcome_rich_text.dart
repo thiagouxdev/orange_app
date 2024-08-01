@@ -3,6 +3,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:orange_app/routes/app_routes.dart';
+import 'package:orange_app/utils/constants/text_strings.dart';
 
 class WelcomeRichText extends StatelessWidget {
   const WelcomeRichText({
@@ -18,11 +19,11 @@ class WelcomeRichText extends StatelessWidget {
     return RichText(
       textAlign: TextAlign.center,
       text: TextSpan(
-        text: "Leia nossa ",
+        text: TTexts.readOur,
         style: baseStyle,
         children: [
           TextSpan(
-            text: "Política de Privacidade.",
+            text: TTexts.privacyPolicy,
             style: linkStyle,
             recognizer: TapGestureRecognizer()
               ..onTap = () {
@@ -30,11 +31,12 @@ class WelcomeRichText extends StatelessWidget {
               },
           ),
           TextSpan(
-            text: " Toque em Concordar e continuar para aceitar os ",
+            text:
+                "${TTexts.tapOn} ${TTexts.agreeAndContinue} ${TTexts.toAcceptThe} ",
             style: baseStyle,
           ),
           TextSpan(
-            text: "Termos de Serviço.",
+            text: "${TTexts.termsOfService}.",
             style: linkStyle,
             recognizer: TapGestureRecognizer()
               ..onTap = () {

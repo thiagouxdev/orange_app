@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:orange_app/common/widgets/actiom_bottom.dart';
 import 'package:orange_app/utils/constants/image_strings.dart';
 import 'package:orange_app/utils/constants/sizes.dart';
+import 'package:orange_app/utils/constants/text_strings.dart';
 import 'package:orange_app/utils/theme/widgets/text_theme.dart';
 import 'widgets/welcome_rich_text.dart';
 
@@ -24,7 +25,7 @@ class WelcomePage extends StatelessWidget {
                   padding: const EdgeInsets.all(TSizes.marginMedium),
                   child: Column(
                     children: [
-                      TText.headlineMedium("Bem-vindo(a) ao Orange"),
+                      TText.headlineMedium(TTexts.welcomeHeading),
                       const SizedBox(
                         height: TSizes.gapMedium,
                       ),
@@ -38,7 +39,7 @@ class WelcomePage extends StatelessWidget {
         ),
       ),
       bottomSheet: ActiomBottom(
-        label: "Concordar e continuar",
+        label: TTexts.agreeAndContinue,
         onPressed: () {},
       ),
     );
