@@ -3,7 +3,6 @@ class TTexts {
   static const String walkthroughHeading1 = "Discover Our Features";
   static const String walkthroughHeading2 = "Easy and Secure";
   static const String walkthroughHeading3 = "Join Our Community";
-
   static const String walkthroughSubHeading1 =
       "Explore the unique features that make our app stand out. Get the most out of your experience with intuitive design and functionality.";
   static const String walkthroughSubHeading2 =
