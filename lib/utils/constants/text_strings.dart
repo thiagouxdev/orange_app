@@ -13,14 +13,13 @@ class TTexts {
 
   // Welcome
   static const String welcomeHeading = "Welcome to Orange";
-
   static const String readOur = "Read our";
-  static const String privacyPolicy = "Privacy Policy";
   static const String tapOn = "Tap on";
   static const String agreeAndContinue = "Agree and continue";
   static const String toAcceptThe = "to accept the";
-  static const String termsOfService = "Terms of Service";
 
   // Common
   static const String continueText = "Continue";
+  static const String termsOfService = "Terms of Service";
+  static const String privacyPolicy = "Privacy Policy";
 }

@@ -19,7 +19,7 @@ class WelcomeRichText extends StatelessWidget {
     return RichText(
       textAlign: TextAlign.center,
       text: TextSpan(
-        text: TTexts.readOur,
+        text: "${TTexts.readOur} ",
         style: baseStyle,
         children: [
           TextSpan(
@@ -32,7 +32,7 @@ class WelcomeRichText extends StatelessWidget {
           ),
           TextSpan(
             text:
-                "${TTexts.tapOn} ${TTexts.agreeAndContinue} ${TTexts.toAcceptThe} ",
+                ". ${TTexts.tapOn} ${TTexts.agreeAndContinue} ${TTexts.toAcceptThe} ",
             style: baseStyle,
           ),
           TextSpan(

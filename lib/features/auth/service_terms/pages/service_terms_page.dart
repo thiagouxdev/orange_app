@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../utils/constants/text_strings.dart';
 import '../../../../utils/theme/widgets/sliver_app_bar_theme.dart';
 
 class ServiceTermsPage extends StatelessWidget {
@@ -10,7 +11,7 @@ class ServiceTermsPage extends StatelessWidget {
     return const Scaffold(
       body: CustomScrollView(
         slivers: [
-          TSliverAppBarTheme(title: "Termos de Serviço"),
+          TSliverAppBarTheme(title: TTexts.termsOfService),
         ],
       ),
     );
