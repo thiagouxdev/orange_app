@@ -21,4 +21,17 @@ class TTexts {
   static const String continueText = "Continue";
   static const String termsOfService = "Terms of Service";
   static const String privacyPolicy = "Privacy Policy";
+  static const String eMail = "E-mail";
+  static const String password = "Password";
+  static const String signIn = "Sign In";
+  static const String createAccount = "Create Account";
+  static const String signInWithGoogle = "Entrar com google";
+
+  // Welcome back
+  static const String welcomeBackHeading = "Welcome back";
+  static const String welcomeBackSubHeading =
+      "Disconver Limitless Choices and Unmmatched Convaenience";
+  static const String rememberMe = "Rememaber Me";
+  static const String forgetPassword = "Forget password?";
+  static const String orSignInWith = "Or Sign in With";
 }
