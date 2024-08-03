@@ -81,7 +81,8 @@ class _FormWelcomeBackState extends State<FormWelcomeBack> {
           const SizedBox(
             height: TSizes.gapMedium,
           ),
-          TOutlinedButtonLargerTheme(label: TTexts.signIn, onPressed: () {}),
+          TOutlinedButtonLargerTheme(
+              label: TTexts.createAccount, onPressed: () {}),
         ],
       ),
     );
