@@ -25,6 +25,7 @@ class _FormWelcomeBackState extends State<FormWelcomeBack> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          // Email
           const TextField(
             decoration: InputDecoration(
               prefixIcon: Icon(Icons.mail_outline),
@@ -32,10 +33,9 @@ class _FormWelcomeBackState extends State<FormWelcomeBack> {
               labelText: TTexts.eMail,
             ),
           ),
-          const SizedBox(
-            height: TSizes.gapSmall,
-          ),
           const Gap(TSizes.gapMedium),
+
+          // Password
           TextField(
             obscureText: _obscureText,
             decoration: InputDecoration(
@@ -54,22 +54,23 @@ class _FormWelcomeBackState extends State<FormWelcomeBack> {
               labelText: TTexts.password,
             ),
           ),
+
+          // Remember Me & Forget Password
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              SizedBox(
-                child: Row(children: [
-                  Checkbox(
-                    value: _isChecked,
-                    onChanged: (bool? value) {
-                      setState(() {
-                        _isChecked = !_isChecked;
-                      });
-                    },
-                  ),
-                  TText.bodyMedium(TTexts.rememberMe),
-                ]),
-              ),
+              // Remember Me
+              Row(children: [
+                Checkbox(
+                  value: _isChecked,
+                  onChanged: (bool? value) {
+                    setState(() {
+                      _isChecked = !_isChecked;
+                    });
+                  },
+                ),
+                TText.bodyMedium(TTexts.rememberMe),
+              ]),
               TextButton(
                 onPressed: () {},
                 child: const Text(TTexts.forgetPassword),

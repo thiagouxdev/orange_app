@@ -48,7 +48,7 @@ class _WalkthroughPageState extends State<WalkthroughPage> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(bottom: TSizes.marginLarger * 4),
+              padding: const EdgeInsets.only(bottom: TSizes.marginLarger * 2),
               child: WalkthroughSmoothPageIndicator(
                   pageController: _pageController, items: items),
             ),
