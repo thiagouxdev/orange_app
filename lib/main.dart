@@ -3,10 +3,6 @@ import 'package:get/get.dart';
 import 'package:orange_app/routes/app_page.dart';
 import 'package:orange_app/utils/theme/theme.dart';
 
-void main() {
-  runApp(const MyApp());
-}
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 

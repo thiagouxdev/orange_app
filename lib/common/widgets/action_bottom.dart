@@ -20,7 +20,11 @@ class ActionBottom extends StatelessWidget {
       children: [
         const Divider(),
         Padding(
-          padding: const EdgeInsets.all(TSizes.marginMedium),
+          padding: const EdgeInsets.only(
+              bottom: TSizes.marginMedium,
+              left: TSizes.marginMedium,
+              top: TSizes.marginSmall,
+              right: TSizes.marginMedium),
           child: Column(
             children: [
               TFilledButtonLargerTheme(
