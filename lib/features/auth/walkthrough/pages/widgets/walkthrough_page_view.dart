@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:orange_app/features/auth/walkthrough/models/walkthrough_models.dart';
 import 'package:orange_app/utils/constants/sizes.dart';
 import 'package:orange_app/utils/theme/widgets/text_theme.dart';
@@ -27,17 +28,14 @@ class WalkthroughPageView extends StatelessWidget {
               item.image,
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(
-                  horizontal: TSizes.extraLarge, vertical: TSizes.extraLarge),
+              padding: const EdgeInsets.all(TSizes.marginLarger),
               child: Column(
                 children: [
                   TText.headlineMedium(
                     item.heading,
                     textAlign: TextAlign.center,
                   ),
-                  const SizedBox(
-                    height: TSizes.medium,
-                  ),
+                  const Gap(TSizes.gapMedium),
                   TText.bodyMedium(
                     item.subHeading,
                     textAlign: TextAlign.center,

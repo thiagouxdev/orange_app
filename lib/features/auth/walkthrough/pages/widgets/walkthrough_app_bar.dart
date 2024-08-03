@@ -10,7 +10,7 @@ class WalkthroughAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: TSizes.superExtraLarge * 2,
+      height: TSizes.appBarHeight,
       child: Row(
         children: [
           Padding(

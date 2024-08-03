@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 import '../../../../utils/constants/image_strings.dart';
 import '../../../../utils/constants/sizes.dart';
@@ -18,15 +19,11 @@ class HeaderWelcomeBack extends StatelessWidget {
         Image.asset(
           TImages.getLogoMark(context),
         ),
-        const SizedBox(
-          height: TSizes.gapMedium,
-        ),
+        const Gap(TSizes.gapMedium),
         TText.headlineMedium(
           TTexts.welcomeBackHeading,
         ),
-        const SizedBox(
-          height: TSizes.extraSmall,
-        ),
+        const Gap(TSizes.gapSmall),
         TText.bodyLarge(TTexts.welcomeBackSubHeading),
       ],
     );

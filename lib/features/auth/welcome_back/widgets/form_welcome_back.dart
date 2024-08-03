@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:orange_app/utils/constants/sizes.dart';
 import 'package:orange_app/utils/constants/text_strings.dart';
 import 'package:orange_app/utils/theme/widgets/filled_button_larger_theme.dart';
@@ -32,8 +33,9 @@ class _FormWelcomeBackState extends State<FormWelcomeBack> {
             ),
           ),
           const SizedBox(
-            height: TSizes.gapMedium,
+            height: TSizes.gapSmall,
           ),
+          const Gap(TSizes.gapMedium),
           TextField(
             obscureText: _obscureText,
             decoration: InputDecoration(
@@ -74,13 +76,9 @@ class _FormWelcomeBackState extends State<FormWelcomeBack> {
               )
             ],
           ),
-          const SizedBox(
-            height: TSizes.gapMedium,
-          ),
+          const Gap(TSizes.gapMedium),
           TFilledButtonLargerTheme(label: TTexts.signIn, onPressed: () {}),
-          const SizedBox(
-            height: TSizes.gapMedium,
-          ),
+          const Gap(TSizes.gapMedium),
           TOutlinedButtonLargerTheme(
               label: TTexts.createAccount, onPressed: () {}),
         ],

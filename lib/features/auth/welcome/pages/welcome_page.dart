@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:get/get.dart';
 import 'package:orange_app/common/widgets/actiom_bottom.dart';
 import 'package:orange_app/routes/app_routes.dart';
@@ -18,7 +19,7 @@ class WelcomePage extends StatelessWidget {
         child: Center(
           child: Padding(
             padding: const EdgeInsets.only(
-              top: TSizes.superExtraLarge,
+              top: TSizes.marginLarger,
             ),
             child: Column(
               children: [
@@ -28,9 +29,7 @@ class WelcomePage extends StatelessWidget {
                   child: Column(
                     children: [
                       TText.headlineMedium(TTexts.welcomeHeading),
-                      const SizedBox(
-                        height: TSizes.gapMedium,
-                      ),
+                      const Gap(TSizes.gapMedium),
                       const WelcomeRichText()
                     ],
                   ),

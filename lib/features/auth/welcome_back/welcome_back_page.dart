@@ -14,8 +14,7 @@ class WelcomeBackPage extends StatelessWidget {
         child: SingleChildScrollView(
           child: Padding(
             padding: EdgeInsets.symmetric(
-                vertical: TSizes.superExtraLarge,
-                horizontal: TSizes.marginMedium),
+                vertical: TSizes.marginLarger, horizontal: TSizes.marginMedium),
             child: SafeArea(
               child: Column(
                 children: [
