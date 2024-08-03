@@ -5,7 +5,7 @@ import 'package:orange_app/utils/constants/text_strings.dart';
 import 'package:orange_app/utils/theme/widgets/filled_button_larger_theme.dart';
 import 'package:orange_app/utils/theme/widgets/text_theme.dart';
 
-import '../../../../utils/theme/widgets/outlined_button_larger_theme.dart';
+import '../../../../../utils/theme/widgets/outlined_button_larger_theme.dart';
 
 class FormWelcomeBack extends StatefulWidget {
   const FormWelcomeBack({super.key});
