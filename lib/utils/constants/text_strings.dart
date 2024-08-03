@@ -34,4 +34,6 @@ class TTexts {
   static const String rememberMe = "Rememaber Me";
   static const String forgetPassword = "Forget password?";
   static const String orSignInWith = "Or Sign in With";
+  static const String loginGoogle = "Login with Google";
+  static const String loginApple = "Login with Apple";
 }

@@ -12,7 +12,10 @@ class WelcomeRichText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final TextStyle baseStyle = Theme.of(context).textTheme.bodyLarge!;
+    final TextStyle baseStyle = Theme.of(context)
+        .textTheme
+        .bodyLarge!
+        .copyWith(color: Theme.of(context).colorScheme.onSurfaceVariant);
     final TextStyle linkStyle =
         baseStyle.copyWith(color: Theme.of(context).colorScheme.primary);
 

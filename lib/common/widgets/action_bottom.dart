@@ -18,10 +18,7 @@ class ActionBottom extends StatelessWidget {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        const Divider(
-          thickness: 0.5,
-          height: 0,
-        ),
+        const Divider(),
         Padding(
           padding: const EdgeInsets.all(TSizes.marginMedium),
           child: Column(

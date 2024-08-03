@@ -20,7 +20,7 @@ class _FormWelcomeBackState extends State<FormWelcomeBack> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: TSizes.gapLarge),
+      padding: const EdgeInsets.symmetric(vertical: TSizes.gapMedium),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

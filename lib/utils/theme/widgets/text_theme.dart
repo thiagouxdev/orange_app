@@ -3,19 +3,23 @@ import 'package:flutter/material.dart';
 class TText extends StatelessWidget {
   final String text;
   final TextStyle? style;
-  final TextAlign? textAlign; // Adicione esta linha
+  final TextAlign? textAlign;
+  final Color? color;
 
-  const TText(this.text,
-      {super.key,
-      this.style,
-      this.textAlign}); // Adicione textAlign ao construtor
+  const TText(
+    this.text, {
+    super.key,
+    this.style,
+    this.textAlign,
+    this.color,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Text(
       text,
-      style: style,
-      textAlign: textAlign, // Utilize textAlign aqui
+      style: style?.copyWith(color: color) ?? TextStyle(color: color),
+      textAlign: textAlign,
     );
   }
 
@@ -23,7 +27,7 @@ class TText extends StatelessWidget {
         builder: (context) => TText(
           text,
           style: Theme.of(context).textTheme.headlineLarge,
-          textAlign: textAlign, // Adicione textAlign aqui
+          textAlign: textAlign,
         ),
       );
 
@@ -31,7 +35,7 @@ class TText extends StatelessWidget {
         builder: (context) => TText(
           text,
           style: Theme.of(context).textTheme.headlineMedium,
-          textAlign: textAlign, // Adicione textAlign aqui
+          textAlign: textAlign,
         ),
       );
 
@@ -39,7 +43,7 @@ class TText extends StatelessWidget {
         builder: (context) => TText(
           text,
           style: Theme.of(context).textTheme.headlineSmall,
-          textAlign: textAlign, // Adicione textAlign aqui
+          textAlign: textAlign,
         ),
       );
 
@@ -47,7 +51,7 @@ class TText extends StatelessWidget {
         builder: (context) => TText(
           text,
           style: Theme.of(context).textTheme.titleLarge,
-          textAlign: textAlign, // Adicione textAlign aqui
+          textAlign: textAlign,
         ),
       );
 
@@ -55,7 +59,7 @@ class TText extends StatelessWidget {
         builder: (context) => TText(
           text,
           style: Theme.of(context).textTheme.titleMedium,
-          textAlign: textAlign, // Adicione textAlign aqui
+          textAlign: textAlign,
         ),
       );
 
@@ -63,7 +67,7 @@ class TText extends StatelessWidget {
         builder: (context) => TText(
           text,
           style: Theme.of(context).textTheme.titleSmall,
-          textAlign: textAlign, // Adicione textAlign aqui
+          textAlign: textAlign,
         ),
       );
 
@@ -71,7 +75,7 @@ class TText extends StatelessWidget {
         builder: (context) => TText(
           text,
           style: Theme.of(context).textTheme.labelLarge,
-          textAlign: textAlign, // Adicione textAlign aqui
+          textAlign: textAlign,
         ),
       );
 
@@ -79,7 +83,7 @@ class TText extends StatelessWidget {
         builder: (context) => TText(
           text,
           style: Theme.of(context).textTheme.labelMedium,
-          textAlign: textAlign, // Adicione textAlign aqui
+          textAlign: textAlign,
         ),
       );
 
@@ -87,7 +91,7 @@ class TText extends StatelessWidget {
         builder: (context) => TText(
           text,
           style: Theme.of(context).textTheme.labelSmall,
-          textAlign: textAlign, // Adicione textAlign aqui
+          textAlign: textAlign,
         ),
       );
 
@@ -95,7 +99,8 @@ class TText extends StatelessWidget {
         builder: (context) => TText(
           text,
           style: Theme.of(context).textTheme.bodyLarge,
-          textAlign: textAlign, // Adicione textAlign aqui
+          textAlign: textAlign,
+          color: Theme.of(context).colorScheme.onSurfaceVariant,
         ),
       );
 
@@ -103,7 +108,8 @@ class TText extends StatelessWidget {
         builder: (context) => TText(
           text,
           style: Theme.of(context).textTheme.bodyMedium,
-          textAlign: textAlign, // Adicione textAlign aqui
+          textAlign: textAlign,
+          color: Theme.of(context).colorScheme.onSurfaceVariant,
         ),
       );
 
@@ -111,7 +117,8 @@ class TText extends StatelessWidget {
         builder: (context) => TText(
           text,
           style: Theme.of(context).textTheme.bodySmall,
-          textAlign: textAlign, // Adicione textAlign aqui
+          textAlign: textAlign,
+          color: Theme.of(context).colorScheme.onSurfaceVariant,
         ),
       );
 }

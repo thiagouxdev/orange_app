@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:orange_app/utils/constants/sizes.dart';
 
 class TOutlinedButtonLargerTheme extends StatelessWidget {
   final String label;
@@ -22,13 +23,13 @@ class TOutlinedButtonLargerTheme extends StatelessWidget {
       ),
       onPressed: onPressed,
       child: Row(
-        mainAxisSize: MainAxisSize.min, // Ajusta o tamanho do Row ao conteúdo
+        mainAxisSize: MainAxisSize.min,
         children: [
           if (icon != null) ...[
-            icon!, // Exibe o ícone se ele for fornecido
-            const SizedBox(width: 8), // Espaçamento entre ícone e texto
+            icon!,
+            const SizedBox(width: TSizes.gapSmall),
           ],
-          Text(label), // Exibe o texto
+          Text(label),
         ],
       ),
     );
