@@ -3,11 +3,11 @@ import 'package:orange_app/utils/constants/sizes.dart';
 import '../../utils/constants/text_strings.dart';
 import '../../utils/theme/widgets/filled_button_larger_theme.dart';
 
-class ActiomBottom extends StatelessWidget {
+class ActionBottom extends StatelessWidget {
   final String? label;
   final VoidCallback onPressed;
 
-  const ActiomBottom({
+  const ActionBottom({
     super.key,
     this.label,
     required this.onPressed,

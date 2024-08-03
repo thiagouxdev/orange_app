@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:get/get.dart';
-import 'package:orange_app/common/widgets/actiom_bottom.dart';
+import 'package:orange_app/common/widgets/action_bottom.dart';
 import 'package:orange_app/routes/app_routes.dart';
 import 'package:orange_app/utils/constants/image_strings.dart';
 import 'package:orange_app/utils/constants/sizes.dart';
@@ -21,9 +21,14 @@ class WelcomePage extends StatelessWidget {
             padding: const EdgeInsets.only(
               top: TSizes.marginLarger,
             ),
+
+            // Content Welcome
             child: Column(
               children: [
+                // Image
                 Image.asset(TImages.getWelcome(context)),
+
+                // Rich Text
                 Padding(
                   padding: const EdgeInsets.all(TSizes.marginMedium),
                   child: Column(
@@ -39,7 +44,9 @@ class WelcomePage extends StatelessWidget {
           ),
         ),
       ),
-      bottomSheet: ActiomBottom(
+
+      // Action Bottom
+      bottomSheet: ActionBottom(
         label: TTexts.agreeAndContinue,
         onPressed: () {
           Get.toNamed(AppRoutes.welcomeBackPage);

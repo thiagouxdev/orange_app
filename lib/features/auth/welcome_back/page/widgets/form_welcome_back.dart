@@ -4,7 +4,6 @@ import 'package:orange_app/utils/constants/sizes.dart';
 import 'package:orange_app/utils/constants/text_strings.dart';
 import 'package:orange_app/utils/theme/widgets/filled_button_larger_theme.dart';
 import 'package:orange_app/utils/theme/widgets/text_theme.dart';
-
 import '../../../../../utils/theme/widgets/outlined_button_larger_theme.dart';
 
 class FormWelcomeBack extends StatefulWidget {
@@ -60,26 +59,34 @@ class _FormWelcomeBackState extends State<FormWelcomeBack> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               // Remember Me
-              Row(children: [
-                Checkbox(
-                  value: _isChecked,
-                  onChanged: (bool? value) {
-                    setState(() {
-                      _isChecked = !_isChecked;
-                    });
-                  },
-                ),
-                TText.bodyMedium(TTexts.rememberMe),
-              ]),
+              Row(
+                children: [
+                  Checkbox(
+                    value: _isChecked,
+                    onChanged: (bool? value) {
+                      setState(() {
+                        _isChecked = !_isChecked;
+                      });
+                    },
+                  ),
+                  TText.bodyMedium(TTexts.rememberMe),
+                ],
+              ),
+
+              // Forget Password
               TextButton(
                 onPressed: () {},
                 child: const Text(TTexts.forgetPassword),
-              )
+              ),
             ],
           ),
           const Gap(TSizes.gapMedium),
+
+          // Sign In
           TFilledButtonLargerTheme(label: TTexts.signIn, onPressed: () {}),
           const Gap(TSizes.gapMedium),
+
+          // Create account
           TOutlinedButtonLargerTheme(
               label: TTexts.createAccount, onPressed: () {}),
         ],
