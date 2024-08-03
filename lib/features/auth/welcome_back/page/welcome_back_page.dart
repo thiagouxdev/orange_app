@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:orange_app/utils/constants/sizes.dart';
+import 'widgets/footer_welcome_back.dart';
 import 'widgets/form_welcome_back.dart';
 import 'widgets/header_welcome_back.dart';
 
@@ -20,7 +21,7 @@ class WelcomeBackPage extends StatelessWidget {
                 children: [
                   HeaderWelcomeBack(),
                   FormWelcomeBack(),
-                  // FooterWelcomeBack(),
+                  FooterWelcomeBack(),
                 ],
               ),
             ),

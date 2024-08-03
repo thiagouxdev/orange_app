@@ -35,3 +35,5 @@ flutter:
   - assets/welcome/light/
   - assets/logos/dark/
   - assets/logos/light/
+  - assets/social_icon/dark/
+  - assets/social_icon/light/

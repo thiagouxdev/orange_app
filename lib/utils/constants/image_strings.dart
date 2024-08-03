@@ -27,4 +27,12 @@ class TImages {
   static String getLogoMark(context) {
     return TResources.getResourcePath(context, "logos", "logomark");
   }
+
+  static String getSocialGoogle(context) {
+    return TResources.getResourcePath(context, "social_icon", "google");
+  }
+
+  static String getSocialApple(context) {
+    return TResources.getResourcePath(context, "social_icon", "apple");
+  }
 }
