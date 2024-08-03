@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:orange_app/common/widgets/actiom_bottom.dart';
+import 'package:orange_app/routes/app_routes.dart';
 import 'package:orange_app/utils/constants/image_strings.dart';
 import 'package:orange_app/utils/constants/sizes.dart';
 import 'package:orange_app/utils/constants/text_strings.dart';
@@ -40,7 +42,9 @@ class WelcomePage extends StatelessWidget {
       ),
       bottomSheet: ActiomBottom(
         label: TTexts.agreeAndContinue,
-        onPressed: () {},
+        onPressed: () {
+          Get.toNamed(AppRoutes.welcomeBackPage);
+        },
       ),
     );
   }

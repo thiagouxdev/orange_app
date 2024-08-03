@@ -23,11 +23,7 @@ class ActiomBottom extends StatelessWidget {
           height: 0,
         ),
         Padding(
-          padding: const EdgeInsets.only(
-              top: TSizes.marginSmall,
-              right: TSizes.marginSmall,
-              bottom: TSizes.marginMedium,
-              left: TSizes.marginSmall),
+          padding: const EdgeInsets.all(TSizes.marginMedium),
           child: Column(
             children: [
               TFilledButtonLargerTheme(

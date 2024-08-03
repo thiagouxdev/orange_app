@@ -1,15 +1,33 @@
 import 'package:flutter/material.dart';
+import 'package:orange_app/utils/constants/sizes.dart';
+import 'widgets/form_welcome_back.dart';
+import 'widgets/header_welcome_back.dart';
 
 class WelcomeBackPage extends StatelessWidget {
   const WelcomeBackPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Welcome Back'),
+    return const Scaffold(
+      // appBar: AppBar(),
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: EdgeInsets.symmetric(
+                vertical: TSizes.superExtraLarge,
+                horizontal: TSizes.marginMedium),
+            child: SafeArea(
+              child: Column(
+                children: [
+                  HeaderWelcomeBack(),
+                  FormWelcomeBack(),
+                  // FooterWelcomeBack(),
+                ],
+              ),
+            ),
+          ),
+        ),
       ),
-      body: Container(),
     );
   }
 }
