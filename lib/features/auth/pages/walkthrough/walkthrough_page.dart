@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:orange_app/features/auth/walkthrough/controllers/walkthrough_controller.dart';
+import 'package:orange_app/features/auth/controllers/walkthrough_controller.dart';
 import 'package:orange_app/common/widgets/action_bottom.dart';
 import 'package:orange_app/routes/app_routes.dart';
 import 'package:orange_app/utils/constants/sizes.dart';
