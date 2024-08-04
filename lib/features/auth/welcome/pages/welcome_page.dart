@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:get/get.dart';
-import 'package:orange_app/common/widgets/action_bottom.dart';
-import 'package:orange_app/routes/app_routes.dart';
 import 'package:orange_app/utils/constants/image_strings.dart';
 import 'package:orange_app/utils/constants/sizes.dart';
 import 'package:orange_app/utils/constants/text_strings.dart';
+import 'package:orange_app/utils/device/device_utility.dart';
 import 'package:orange_app/utils/theme/widgets/text_theme.dart';
-import 'widgets/welcome_rich_text.dart';
+import 'widgets/button_actions.dart';
 
 class WelcomePage extends StatelessWidget {
   const WelcomePage({super.key});
@@ -19,23 +17,29 @@ class WelcomePage extends StatelessWidget {
         child: Center(
           child: Padding(
             padding: const EdgeInsets.only(
-              top: TSizes.marginLarger,
+              top: TSizes.marginMedium,
             ),
 
             // Content Welcome
             child: Column(
               children: [
                 // Image
-                Image.asset(TImages.getWelcome(context)),
+                SizedBox(
+                    child: Image.asset(
+                  TImages.getWelcome(context),
+                  width: TDeviceUtils.getScreenWidth(context) * 1,
+                )),
 
-                // Rich Text
+                // Heading and SubHeading
                 Padding(
-                  padding: const EdgeInsets.all(TSizes.marginMedium),
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: TSizes.marginMedium),
                   child: Column(
                     children: [
                       TText.headlineMedium(TTexts.welcomeHeading),
-                      const Gap(TSizes.gapMedium),
-                      const WelcomeRichText()
+                      const Gap(TSizes.gapSmall),
+                      TText.bodyLarge(TTexts.welcomeSubHeading,
+                          textAlign: TextAlign.center),
                     ],
                   ),
                 ),
@@ -46,12 +50,7 @@ class WelcomePage extends StatelessWidget {
       ),
 
       // Action Bottom
-      bottomSheet: ActionBottom(
-        label: TTexts.agreeAndContinue,
-        onPressed: () {
-          Get.toNamed(AppRoutes.welcomeBackPage);
-        },
-      ),
+      bottomSheet: const ButtonActions(),
     );
   }
 }

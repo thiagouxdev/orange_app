@@ -14,7 +14,7 @@ class WelcomeRichText extends StatelessWidget {
   Widget build(BuildContext context) {
     final TextStyle baseStyle = Theme.of(context)
         .textTheme
-        .bodyLarge!
+        .bodyMedium!
         .copyWith(color: Theme.of(context).colorScheme.onSurfaceVariant);
     final TextStyle linkStyle =
         baseStyle.copyWith(color: Theme.of(context).colorScheme.primary);

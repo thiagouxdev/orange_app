@@ -32,5 +32,6 @@ class TSizes {
   // Width and Height
   static const double appBarHeight = 56.0;
   static const double iconSmallHeight = 18.0;
+  static const double buttonLargeHeight = 52.0;
   static const double dividerHeight = 0.5;
 }

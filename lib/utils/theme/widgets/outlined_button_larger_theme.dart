@@ -18,8 +18,8 @@ class TOutlinedButtonLargerTheme extends StatelessWidget {
   Widget build(BuildContext context) {
     return OutlinedButton(
       style: ButtonStyle(
-        minimumSize:
-            WidgetStateProperty.all<Size>(const Size(double.infinity, 52)),
+        minimumSize: WidgetStateProperty.all<Size>(
+            const Size(double.infinity, TSizes.buttonLargeHeight)),
       ),
       onPressed: onPressed,
       child: Row(

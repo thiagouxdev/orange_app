@@ -12,6 +12,8 @@ class TTexts {
 
   // Welcome
   static const String welcomeHeading = "Welcome to Orange";
+  static const String welcomeSubHeading =
+      "Disconver Limitless Choices and Unmmatched Convaenience";
   static const String readOur = "Read our";
   static const String tapOn = "Tap on";
   static const String agreeAndContinue = "Agree and continue";
@@ -19,6 +21,9 @@ class TTexts {
 
   // Common
   static const String continueText = "Continue";
+  static const String continuePhone = "Continue with Phone";
+  static const String continueGoogle = "Continue with Google";
+  static const String continueApple = "Continue with Apple";
   static const String termsOfService = "Terms of Service";
   static const String privacyPolicy = "Privacy Policy";
   static const String eMail = "E-mail";
