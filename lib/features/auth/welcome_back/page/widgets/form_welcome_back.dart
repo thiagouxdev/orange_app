@@ -59,18 +59,21 @@ class _FormWelcomeBackState extends State<FormWelcomeBack> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               // Remember Me
-              Row(
-                children: [
-                  Checkbox(
-                    value: _isChecked,
-                    onChanged: (bool? value) {
-                      setState(() {
-                        _isChecked = !_isChecked;
-                      });
-                    },
-                  ),
-                  TText.bodyMedium(TTexts.rememberMe),
-                ],
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: TSizes.gapSmall),
+                child: Row(
+                  children: [
+                    Checkbox(
+                      value: _isChecked,
+                      onChanged: (bool? value) {
+                        setState(() {
+                          _isChecked = !_isChecked;
+                        });
+                      },
+                    ),
+                    TText.bodyMedium(TTexts.rememberMe),
+                  ],
+                ),
               ),
 
               // Forget Password

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:orange_app/utils/constants/sizes.dart';
-import 'widgets/footer_welcome_back.dart';
+// import 'widgets/footer_welcome_back.dart';
 import 'widgets/form_welcome_back.dart';
 import 'widgets/header_welcome_back.dart';
 
@@ -14,14 +14,16 @@ class WelcomeBackPage extends StatelessWidget {
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
-            padding: EdgeInsets.symmetric(
-                vertical: TSizes.marginLarger, horizontal: TSizes.marginMedium),
+            padding: EdgeInsets.only(
+                top: TSizes.appBarHeight,
+                left: TSizes.marginMedium,
+                right: TSizes.marginMedium),
             child: SafeArea(
               child: Column(
                 children: [
                   HeaderWelcomeBack(),
                   FormWelcomeBack(),
-                  FooterWelcomeBack(),
+                  // FooterWelcomeBack(),
                 ],
               ),
             ),
