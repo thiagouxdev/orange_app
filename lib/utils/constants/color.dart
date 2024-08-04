@@ -29,7 +29,7 @@ class TColorScheme {
     secondary: Color(0xFFE5BFA8),
     onSecondary: Color(0xFF422B1B),
     secondaryContainer: Color(0xFF523C2D),
-    onSecondaryContainer: Color(0xFFFFDCC7),
+    onSecondaryContainer: Color(0xFFFFF0DB),
     error: Color(0xFFFFB4AB),
     onError: Color(0xFF690005),
     surface: Color(0xFF050505),
