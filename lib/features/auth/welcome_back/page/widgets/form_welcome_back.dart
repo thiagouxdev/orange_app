@@ -5,6 +5,7 @@ import 'package:orange_app/utils/constants/text_strings.dart';
 import 'package:orange_app/utils/theme/widgets/filled_button_larger_theme.dart';
 import 'package:orange_app/utils/theme/widgets/text_theme.dart';
 import '../../../../../utils/theme/widgets/outlined_button_larger_theme.dart';
+import '../../../../../utils/theme/widgets/text_field_theme.dart';
 
 class FormWelcomeBack extends StatefulWidget {
   const FormWelcomeBack({super.key});
@@ -25,10 +26,10 @@ class _FormWelcomeBackState extends State<FormWelcomeBack> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           // Email
-          const TextField(
+          TextField(
             decoration: InputDecoration(
-              prefixIcon: Icon(Icons.mail_outline),
-              border: OutlineInputBorder(),
+              prefixIcon: const Icon(Icons.mail_outline),
+              border: textFieldTheme(),
               labelText: TTexts.eMail,
             ),
           ),
@@ -49,7 +50,7 @@ class _FormWelcomeBackState extends State<FormWelcomeBack> {
                   });
                 },
               ),
-              border: const OutlineInputBorder(),
+              border: textFieldTheme(),
               labelText: TTexts.password,
             ),
           ),

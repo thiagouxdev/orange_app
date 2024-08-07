@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:get/get.dart';
+import 'package:orange_app/routes/app_routes.dart';
 
+import '../../../../../routes/app_page.dart';
 import '../../../../../utils/constants/image_strings.dart';
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/constants/text_strings.dart';
@@ -24,7 +27,9 @@ class ButtonActions extends StatelessWidget {
           //Actions
           TFilledButtonLargerTheme(
             label: TTexts.continuePhone,
-            onPressed: () {},
+            onPressed: () {
+              Get.toNamed(AppRoutes.numberAccountPage);
+            },
             icon: const Icon(Icons.call),
           ),
           const Gap(TSizes.gapMedium),

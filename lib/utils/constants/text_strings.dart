@@ -22,15 +22,23 @@ class TTexts {
   // Common
   static const String continueText = "Continue";
   static const String continuePhone = "Continue with Phone";
+  static const String continueEmail = "Continue with E-mail";
   static const String continueGoogle = "Continue with Google";
   static const String continueApple = "Continue with Apple";
   static const String termsOfService = "Terms of Service";
   static const String privacyPolicy = "Privacy Policy";
   static const String eMail = "E-mail";
+  static const String callNumber = "Cell number";
   static const String password = "Password";
   static const String signIn = "Sign In";
   static const String createAccount = "Create Account";
   static const String signInWithGoogle = "Entrar com google";
+
+  // Auth OTP
+  static const String enterNumberHeading = "Enter your number";
+  static const String enterNumberSubHeading =
+      "To make your account more secure, we will send you a confirmation code via SMS";
+  static const String sendCode = "Send code";
 
   // Welcome back
   static const String welcomeBackHeading = "Welcome back";

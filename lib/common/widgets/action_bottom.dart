@@ -5,12 +5,12 @@ import '../../utils/theme/widgets/filled_button_larger_theme.dart';
 
 class ActionBottom extends StatelessWidget {
   final String? label;
-  final VoidCallback onPressed;
+  final VoidCallback? onPressed; // Keep as nullable
 
   const ActionBottom({
     super.key,
     this.label,
-    required this.onPressed,
+    this.onPressed,
   });
 
   @override
@@ -18,13 +18,12 @@ class ActionBottom extends StatelessWidget {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        const Divider(),
+        const Divider(
+          endIndent: 0.5,
+          height: 1,
+        ),
         Padding(
-          padding: const EdgeInsets.only(
-              bottom: TSizes.marginMedium,
-              left: TSizes.marginMedium,
-              top: TSizes.marginSmall,
-              right: TSizes.marginMedium),
+          padding: const EdgeInsets.all(TSizes.marginMedium),
           child: Column(
             children: [
               TFilledButtonLargerTheme(

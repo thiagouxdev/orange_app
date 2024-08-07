@@ -4,13 +4,13 @@ import '../../constants/sizes.dart';
 
 class TFilledButtonLargerTheme extends StatelessWidget {
   final String label;
-  final VoidCallback onPressed;
+  final VoidCallback? onPressed;
   final Widget? icon;
 
   const TFilledButtonLargerTheme({
     super.key,
     required this.label,
-    required this.onPressed,
+    this.onPressed,
     this.icon,
   });
 

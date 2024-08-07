@@ -4,4 +4,5 @@ class AppRoutes {
   static const welcomePage = "/welcome";
   static const privacyPolicyPage = "/privacy_policy";
   static const serviceTermsPage = "/service_terms";
+  static const numberAccountPage = "/number_account";
 }
