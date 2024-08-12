@@ -32,7 +32,7 @@ class TTextTheme {
     //title
     titleLarge: GoogleFonts.getFont(
       tFontFamily,
-      fontSize: 22,
+      fontSize: 20,
       fontWeight: weightBold,
     ),
     titleMedium: GoogleFonts.getFont(
