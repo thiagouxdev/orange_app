@@ -32,9 +32,9 @@ class TColorScheme {
     onSecondaryContainer: Color(0xFFFFF0DB),
     error: Color(0xFFFFB4AB),
     onError: Color(0xFF690005),
-    surface: Color(0xFF050505),
+    surface: Color(0xFF0A0A0A),
     onSurface: Color(0xFFF0ECEB),
-    onSurfaceVariant: Color(0xFFBCB6B2),
+    onSurfaceVariant: Color(0xFF8F8A88),
     outline: Color(0xFF474442),
     outlineVariant: Color(0xFF52443C),
   );

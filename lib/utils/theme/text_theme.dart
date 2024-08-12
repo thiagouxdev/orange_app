@@ -9,35 +9,36 @@ class TTextTheme {
   static const FontWeight weightRegular = FontWeight.w400;
   static const FontWeight weightMedium = FontWeight.w500;
   static const FontWeight weightSemiBold = FontWeight.w600;
+  static const FontWeight weightBold = FontWeight.w700;
 
   static final TextTheme textTheme = TextTheme(
     //headline
     headlineLarge: GoogleFonts.getFont(
       tFontFamily,
       fontSize: 32,
-      fontWeight: weightSemiBold,
+      fontWeight: weightBold,
     ),
     headlineMedium: GoogleFonts.getFont(
       tFontFamily,
       fontSize: 28,
-      fontWeight: weightSemiBold,
+      fontWeight: weightBold,
     ),
     headlineSmall: GoogleFonts.getFont(
       tFontFamily,
       fontSize: 24,
-      fontWeight: weightSemiBold,
+      fontWeight: weightBold,
     ),
 
     //title
     titleLarge: GoogleFonts.getFont(
       tFontFamily,
       fontSize: 22,
-      fontWeight: weightSemiBold,
+      fontWeight: weightBold,
     ),
     titleMedium: GoogleFonts.getFont(
       tFontFamily,
       fontSize: 16,
-      fontWeight: weightSemiBold,
+      fontWeight: weightBold,
       letterSpacing: 0.15,
     ),
     titleSmall: GoogleFonts.getFont(
