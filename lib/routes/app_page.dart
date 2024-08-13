@@ -14,6 +14,6 @@ class AppPages {
     GetPage(name: "/privacy_policy", page: () => const PrivacyPolicyPage()),
     GetPage(name: "/service_terms", page: () => const ServiceTermsPage()),
     GetPage(name: "/number_account", page: () => NumberAccountPage()),
-    GetPage(name: "/otp_code", page: () => const OtpPage()),
+    GetPage(name: "/otp_code", page: () => OtpPage()),
   ];
 }
