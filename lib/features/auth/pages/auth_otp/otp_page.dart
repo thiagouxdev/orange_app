@@ -50,7 +50,7 @@ class OtpPage extends StatelessWidget {
                           child: timerController.isButtonEnabled.value
                               ? const Text(TTexts.resendCode)
                               : Text(
-                                  "${TTexts.resendCode} ${timerController.countdown.value}s"),
+                                  "${TTexts.resendCode} in ${timerController.countdown.value}s"),
                         );
                       }),
                     ),
