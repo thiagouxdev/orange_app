@@ -33,7 +33,7 @@ class ButtonActions extends StatelessWidget {
           const Gap(TSizes.gapMedium),
           TFilledButtonTonalLargerTheme(
             label: TTexts.continueGoogle,
-            onPressed: () {},
+            onPressed: null,
             icon: Image.asset(
               TImages.getSocialGoogle(context),
               width: TSizes.iconSmallHeight,
@@ -42,7 +42,7 @@ class ButtonActions extends StatelessWidget {
           const Gap(TSizes.gapMedium),
           TFilledButtonTonalLargerTheme(
             label: TTexts.continueApple,
-            onPressed: () {},
+            onPressed: null,
             icon: Image.asset(
               TImages.getSocialApple(context),
               width: TSizes.iconSmallHeight,
