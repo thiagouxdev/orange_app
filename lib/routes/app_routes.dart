@@ -5,4 +5,5 @@ class AppRoutes {
   static const privacyPolicyPage = "/privacy_policy";
   static const serviceTermsPage = "/service_terms";
   static const numberAccountPage = "/number_account";
+  static const otpPage = "/otp_code";
 }

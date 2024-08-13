@@ -3,6 +3,7 @@ import 'package:gap/gap.dart';
 import 'package:get/get.dart';
 import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
 import 'package:orange_app/features/auth/controllers/phone_controller.dart';
+import 'package:orange_app/routes/app_routes.dart';
 import 'package:orange_app/utils/constants/sizes.dart';
 import 'package:orange_app/utils/constants/text_strings.dart';
 import '../../../../common/widgets/action_bottom.dart';
@@ -14,6 +15,7 @@ class NumberAccountPage extends StatelessWidget {
 
   // Instantiate the GetX controller
   final PhoneController phoneController = Get.put(PhoneController());
+  final TextEditingController _phoneNumberController = TextEditingController();
 
   // Define the mask formatter for Brazilian phone numbers
   final phoneMaskFormatter = MaskTextInputFormatter(
@@ -24,42 +26,49 @@ class NumberAccountPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: CustomScrollView(
-          slivers: [
-            const TSliverAppBarForm(
-              heading: TTexts.enterNumberHeading,
-              subHeading: TTexts.enterNumberSubHeading,
-            ),
-            SliverPadding(
-              padding: const EdgeInsets.all(TSizes.marginMedium),
-              sliver: SliverToBoxAdapter(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    TextField(
-                      autofocus: true,
-                      keyboardType: TextInputType.phone,
-                      inputFormatters: [phoneMaskFormatter],
-                      decoration: InputDecoration(
-                        prefixIcon: const Icon(Icons.phone_outlined),
-                        border: textFieldTheme(),
-                        labelText: TTexts.callNumber,
-                      ),
-                      onChanged: (value) =>
-                          phoneController.validateInput(value),
+      body: CustomScrollView(
+        slivers: [
+          const TSliverAppBarForm(
+            heading: TTexts.enterNumberHeading,
+            subHeading: TTexts.enterNumberSubHeading,
+          ),
+          SliverPadding(
+            padding: const EdgeInsets.all(TSizes.marginMedium),
+            sliver: SliverToBoxAdapter(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  TextField(
+                    controller: _phoneNumberController,
+                    autofocus: true,
+                    keyboardType: TextInputType.phone,
+                    inputFormatters: [phoneMaskFormatter],
+                    decoration: InputDecoration(
+                      prefixIcon: const Icon(Icons.phone_outlined),
+                      border: textFieldTheme(),
+                      labelText: TTexts.callNumber,
                     ),
-                    const Gap(TSizes.gapMedium),
-                  ],
-                ),
+                    onChanged: (value) => phoneController.validateInput(value),
+                  ),
+                  const Gap(TSizes.gapMedium),
+                ],
               ),
             ),
-          ],
-        ),
-        bottomSheet: Obx(() {
+          ),
+        ],
+      ),
+      bottomSheet: Obx(
+        () {
           return ActionBottom(
-            onPressed: phoneController.isButtonEnabled.value ? () {} : null,
+            onPressed: phoneController.isButtonEnabled.value
+                ? () {
+                    Get.toNamed(AppRoutes.otpPage);
+                  }
+                : null,
             label: TTexts.sendCode,
           );
-        }));
+        },
+      ),
+    );
   }
 }

@@ -29,6 +29,7 @@ class TTexts {
   static const String privacyPolicy = "Privacy Policy";
   static const String eMail = "E-mail";
   static const String callNumber = "Cell number";
+  static const String code = "Code";
   static const String password = "Password";
   static const String signIn = "Sign In";
   static const String createAccount = "Create Account";
@@ -39,6 +40,11 @@ class TTexts {
   static const String enterNumberSubHeading =
       "To make your account more secure, we will send you a confirmation code via SMS";
   static const String sendCode = "Send code";
+  static const String otpHeading = "Enter your number";
+  static const String otpSubHeading =
+      "Enter the 6-digit code sent to (00) *****-0000";
+  static const String resendCode = "Resend code";
+  static const String confirmCode = "Confirm code";
 
   // Welcome back
   static const String welcomeBackHeading = "Welcome back";
