@@ -15,7 +15,6 @@ class NumberAccountPage extends StatelessWidget {
 
   // Instantiate the GetX controller
   final PhoneController phoneController = Get.put(PhoneController());
-  final TextEditingController _phoneNumberController = TextEditingController();
 
   // Define the mask formatter for Brazilian phone numbers
   final phoneMaskFormatter = MaskTextInputFormatter(
@@ -39,7 +38,10 @@ class NumberAccountPage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   TextField(
-                    controller: _phoneNumberController,
+                    controller: phoneController.phoneNumber.value.isNotEmpty
+                        ? TextEditingController(
+                            text: phoneController.phoneNumber.value)
+                        : null,
                     autofocus: true,
                     keyboardType: TextInputType.phone,
                     inputFormatters: [phoneMaskFormatter],
@@ -62,7 +64,8 @@ class NumberAccountPage extends StatelessWidget {
           return ActionBottom(
             onPressed: phoneController.isButtonEnabled.value
                 ? () {
-                    Get.toNamed(AppRoutes.otpPage);
+                    Get.toNamed(AppRoutes.otpPage,
+                        arguments: phoneController.phoneNumber.value);
                   }
                 : null,
             label: TTexts.sendCode,

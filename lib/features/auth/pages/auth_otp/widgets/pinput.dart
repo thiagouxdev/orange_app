@@ -30,7 +30,7 @@ class TPinput extends StatelessWidget {
       ),
       focusedPinTheme: PinTheme(
         height: 64,
-        textStyle: Theme.of(context).textTheme.bodyLarge?.copyWith(
+        textStyle: Theme.of(context).textTheme.headlineSmall?.copyWith(
               color: Theme.of(context).colorScheme.primary,
             ),
         decoration: BoxDecoration(
