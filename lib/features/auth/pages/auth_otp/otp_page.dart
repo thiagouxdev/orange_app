@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:orange_app/common/widgets/action_bottom.dart';
 import 'package:orange_app/features/auth/controllers/otp_controller.dart';
 import 'package:orange_app/features/auth/pages/auth_otp/widgets/sliver_app_bar_form.dart';
+import 'package:orange_app/routes/app_routes.dart';
 import 'package:orange_app/utils/constants/text_strings.dart';
 import '../../../../utils/constants/sizes.dart';
 import '../../controllers/timer_controller.dart';
@@ -64,7 +65,11 @@ class OtpPage extends StatelessWidget {
       bottomSheet: Obx(() {
         return ActionBottom(
           label: TTexts.confirmCode,
-          onPressed: _otpController.isButtonEnabled.value ? () {} : null,
+          onPressed: _otpController.isButtonEnabled.value
+              ? () {
+                  Get.offNamed(AppRoutes.navMenu);
+                }
+              : null,
         );
       }),
     );
