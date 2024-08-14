@@ -6,4 +6,5 @@ class AppRoutes {
   static const serviceTermsPage = "/service_terms";
   static const numberAccountPage = "/number_account";
   static const otpPage = "/otp_code";
+  static const navMenu = "/navigation_menu";
 }
