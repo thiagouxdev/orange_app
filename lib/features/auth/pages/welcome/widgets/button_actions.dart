@@ -33,7 +33,9 @@ class ButtonActions extends StatelessWidget {
           const Gap(TSizes.gapMedium),
           TFilledButtonTonalLargerTheme(
             label: TTexts.continueGoogle,
-            onPressed: null,
+            onPressed: () {
+              Get.offNamed(AppRoutes.navMenu);
+            },
             icon: Image.asset(
               TImages.getSocialGoogle(context),
               width: TSizes.iconSmallHeight,

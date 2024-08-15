@@ -16,6 +16,6 @@ class AppPages {
     GetPage(name: "/service_terms", page: () => const ServiceTermsPage()),
     GetPage(name: "/number_account", page: () => NumberAccountPage()),
     GetPage(name: "/otp_code", page: () => OtpPage()),
-    GetPage(name: "/navigation_menu", page: () => const NavigationMenu()),
+    GetPage(name: "/navigation_menu", page: () => NavigationMenu()),
   ];
 }

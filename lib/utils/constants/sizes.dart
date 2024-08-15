@@ -13,6 +13,7 @@ class TSizes {
   static const double cornerRadiusSmall = small;
   static const double cornerRadiusMedium = medium;
   static const double cornerRadiusLarge = large;
+  static const double cornerRadiusExtraLarge = extraLarge;
   static const double cornerRadiusFull = full;
 
   // Gap
