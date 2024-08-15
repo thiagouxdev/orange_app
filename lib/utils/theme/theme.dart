@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../constants/color.dart';
+import 'widgets/badge_theme.dart';
 import 'widgets/divider_theme.dart';
 import 'widgets/list_tile_theme.dart';
 import 'text_theme.dart';
@@ -15,6 +16,7 @@ class TAppTheme {
       textTheme: TTextTheme.textTheme,
       dividerTheme: TDividerTheme.theme(),
       listTileTheme: TListTileTheme.listTileTheme(textTheme, colorScheme),
+      badgeTheme: TBadgeTheme.badgeTheme(colorScheme),
     );
   }
 
@@ -26,6 +28,7 @@ class TAppTheme {
       textTheme: TTextTheme.textTheme,
       dividerTheme: TDividerTheme.theme(),
       listTileTheme: TListTileTheme.listTileTheme(textTheme, colorScheme),
+      badgeTheme: TBadgeTheme.badgeTheme(colorScheme),
     );
   }
 }

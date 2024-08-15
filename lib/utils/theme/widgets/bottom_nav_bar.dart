@@ -62,7 +62,9 @@ class TBottomNavBar extends StatelessWidget {
                             selectedIcon: TSelectedNavBar(
                               icon: Icons.home_filled,
                             ),
-                            icon: Icon(Icons.home_outlined),
+                            icon: Icon(
+                              Icons.home_outlined,
+                            ),
                             label: "home",
                           ),
                           const NavigationDestination(
@@ -120,7 +122,10 @@ class TSelectedNavBar extends StatelessWidget {
         height: 52,
         width: 64,
         color: Theme.of(context).colorScheme.surface,
-        child: Icon(icon),
+        child: Icon(
+          icon,
+          color: Theme.of(context).colorScheme.onSurface,
+        ),
       ),
     );
   }
